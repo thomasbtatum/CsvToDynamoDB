@@ -24,7 +24,7 @@ namespace ConsoleApp1
             rate.TenYear = TreatDecimals(values[2]);
             rate.TwentyYear = TreatDecimals(values[3]);
             rate.AtAgeSixtyFive = TreatDecimals(values[4]);
-            rate.Male = 'F' == Convert.ToChar(values[5]);
+            rate.Male = 'M' == Convert.ToChar(values[5]);
             rate.Smoker = 'Y' == Convert.ToChar(values[6]);
             return rate;
 

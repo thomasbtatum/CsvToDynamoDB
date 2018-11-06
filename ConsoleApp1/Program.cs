@@ -10,7 +10,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             var rates = ReadCSV(args[0]);
-            var table = AWSUtil.CreateDynamoDbTable();
+            var table = AWSUtil.CreateDynamoDbTable(args[1], args[2]);
             AWSUtil.LoadJsonDataToTable(table, rates);
         }
 
